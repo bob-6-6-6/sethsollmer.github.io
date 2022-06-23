@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Scrolling Nav - A.I. Camp </title>
+        <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">AI Camp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About our Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Strokes</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#Visualizations">Visualizations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Machine Learning">Machine Learning</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#contact">In Retrospect...</a></li>
+                    </ul>
+                </div>
+              </div>
+        </nav>
+        <!-- Header-->
+        <header style="background-color:#4682B4">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Predicting Strokes</h1>
+                <p class="lead">Our machine learning model factors in your traits to determine if you are at risk of having a stroke.</p>
+                <a class="btn btn-lg btn-light" href="#about">Am I at risk?</a>
+            </div>
+        </header>
+        <!-- About section-->
+        <section id="about">
+            <div class="container px-8">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>About Our Project</h2>
+                        <p class="lead">For our data science project, we created a model that would analyze and predict the probability of having a stroke based on a data set found from Kaggle. Our website shows how we used machine learning to classify individuals with certain traits into categories that indicate stroke risk. Our tech stack included: </p>
+                        <ul>
+                            <li> Python </li>
+                            <li> Numpy </li>
+                            <li> Pandas </li>
+                            <li> Sklearn </li>
+                            <li> Plotly </li>
+                            <li> HTML </li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+        </section>
+        <!-- Services section-->
+        <section class="bg-light" id="services">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Why We're Focusing on  Strokes: </h2>
+                        <p class="lead">Strokes are responsible for 1 in 20 deaths in the United States of America and are ranked number five in the country's leading causes of death. In fact, the Center for Disease Control reports that the frequency of stroke deaths is so high that on average a persons loses their life to a stroke every 3.5 minutes. One in four stroke victims has had a stroke before. By being able to observe trends in stroke victims, such as the correlation between smoking and risk of stroke, our A.I. may be able to help people better prevent this often fatal occurence.</p>
+                    </div>
+              </div>
+              <br>
+                   <h2>Why Machine Learning? </h2>
+                        <p class="lead">As developing coders, we wanted to know if it was possible to classify strokes using machine learning. But why machine learning? The importance of machine learning in health is that our model can serve as a tool for health care professionals who are fallible to human error. Even the most skilled doctors may misdiagnose, so a model can assist in catching mistakes and potentially save lives. </p>
+                    </div>
+ 
+        </section>
+        <!-- Visualization section-->
+        <section id="Visualizations">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                      <!-- Contact section-->
+        <section id="Visualizations">
+                        <h2>Visualizations</h2>
+                        <p class="lead">For our project, the Frenzied Physicists made various visualizations in order to explore our dataset. We wanted to see how different features in our data (age, sex, bmi, smoking habits, etc.) might relate to having strokes.</p>
+                       <h3>Histograms</h3>
+                      <p class= "lead"><b>Stroke Histogram</b></p>
+                   <iframe width="900" height="900" title="Correlation Table of Features" 
+	src="static/plots/strokes_histogram.html"></iframe>
+                      <p class="lead">Our first plot was a histogram of stroke status. The y-axis represents the number of individuals in each category, while the x-axis gives us two categories for the people in our data set to fall into: 0, which means that a person has not experienced a stroke, and 1, meaning the person has suffered a stroke. From plotting our data set onto a histogram, we see that 587 people have never had a stroke, while 470 individuals have suffered a stroke. </p>
+                  </div>
+                      <p class= "lead"> <b>Strokes in Relation to Average Glucose Level</b></p>
+                  <iframe width="900" height="900" title="Strokes Histogram" 
+	src="static/plots/Strokes_histogram_Glucose.html"></iframe> 
+                      <p class="lead">This plot is one of our simpler histograms but it exemplifies how useful visual histograms are in quickly determining the significance of an observation. Here, our y-axis tells us how many people belong in each category, and the x-axis tells us which categories we're even looking at. The x-axis tells us how many stroke victims and non-stroke victims belong to each average glucose level. Stroke victims are shown in red while non-stroke victims are shown in blue. We can see a massive difference in the average glucose levels of stroke victims in comparison to non-stroke victims, with stroke victims typically having much higher average glucose levels than non-stroke victims. It is also worth noting that most participants in the data set have average glucose levels around the 90-99.99 range, with small spike later in the average glucose level range around 190-199.99.</p>
+                 <p class="lead">
+                   <b> Age in relation to strokes</b></p>
+                  <iframe width="900" height="900" title="Strokes Histogram" 
+	src="static/plots/age_histogram.html"></iframe>
+                  <p class ="lead">This histogram and the one proceeding it follow the same color scheme and y-axis, with the only differences being the x-axis being swapped out for a different feature. In this histogram instead of looking at the average glucose level we are looking at age! This is probably the most apparent distinction that can be made, as the number of stroke victims can be seen shooting up dramatically from the age range of 75-79.99. It may also be noted that non-stroke victims can be around any age.</p>
+ <p class= "lead"> <b>BMI Histogram</b></p>
+                    <iframe width="900" height="900" title="BMI Histogram" 
+	src="static/plots/bmi_histogram.html"></iframe> 
+                  <p class= "lead">Once more we will be looking at body mass index. The y-axis is still "count", however this time our x-axis is "b.m.i." This plot tells us that the average b.m.i. for stroke victims follows the same curve as non-stroke victims, sitting at an average between 27 and 27.99. The only difference we could find with this one is that there are just more people with that b.m.i. in our stroke victim category. </p>
+                      </div>
+                      <h3>Scatter Plots</h3>
+          <p class= "lead"><b>Glucose vs. Age</b></p>
+                                          <iframe width="900" height="900" title="Correlation Table of Features" 
+	src="static/plots/glucose_vs_age_scatter.html"></iframe>
+              <p class= "lead">This scatter plot helps us understand one health condition of the participants in the survey our data set is based off of. While this scatter plot does not explicitly helps us learn about causes of stroke, it, like the two plots proceeding, do helps us identify trends in the differences between common traits of stroke victims and non-stroke victims. On our y=axis is the age range all of the patients fell in between, and on the x-axis is the average glucose level of those patients. The visualization helps us notice a higher concentration of individuals with high average glucose level in older age groups.</p>
+           <p class= "lead"><b>Age vs. BMI</b></p>
+                      <iframe width="900" height="900" title="Correlation Table of Features" 
+	src="static/plots/age_bmi_scatter.html"></iframe>
+              <p class="lead">The correlation between age and body mass index is also an interesting peephole into the different traits of stroke victims and non-stroke victims, except this time instead of their being an observed trend, the visualization actually helps us see that the connection we were looking for is weak and not worth taking into account. Despite the line of best fit displaying an upward tilt, the amount of outliers in the data is too large for any hard distinction to be made. BMI rests along the y-axis while age sits on the x-axis. Take a look for yourself and see what we mean.</p>
+               <p class= "lead"><b>Glucose vs. BMI</b></p>
+                      <iframe width="900" height="900" title="Corr    elation Table of Features" 
+	src="static/plots/glucose_vs_bmi_scatter.html"></iframe>
+  <p class="lead">In this scatter plot, blue represents stroke victims and red represents people who have not had a stroke, an inversion from the previous plots on this website. With that said, this scatter plot displays a positive trend upward, but the correlation is not significant enough to be notable. This scatter plot only confirms earlier findings. Individuals who have strokes tend to have higher average glucose levels. The scattered nature of b.m.i. here though suggest no significant link. </p>
+   <p class= "lead"><b>Age vs. BMI + Glucose</b></p>
+                       <iframe width="900" height="900" title="Correlation Table of Features" 
+	src="static/plots/Scatter_bmiVSage.html"></iframe>
+              <p class="lead"> On this scatter plot, body mass index and average glucose level are fixed on the y-axis while age sits on the x-axis. It should be apparent that as the color shifts to yellow and the size of the dots get bigger, the average glucose level getting is increasing. From this visualization we can confirm our assessment from earlier that age and average glucose level have a positive relationship, and even re-evaluate our earlier thoughts on the relationship between age and body mass index,as there does appear to be an increase in b.m.i. with age as well. </p>
+
+                  
+                  </div>
+<div class="container px-8">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+              <h3>Boxplots</h3>
+ <p class= "lead"><b>Stroke vs. Glucose</b></p>
+          <iframe width="900" height="900" title="Correlation Table of Features" 
+	src="static/plots/box_plot_stroke_glucose.html"></iframe> 
+          <div class="row gx-4 justify-content-center">
+          <p class= "lead"> This visualization shows the y-axis as average glucose level and the x-axis as stroke. The box plot shows shows the distribution of glucose levels and it shows that the people that are getting strokes have a higher average glucose and people that are not getting strokes have a lower average glucose level. The graph also shows 'Outliers' which means that there are a few points that don't fit in with the majority of the data.
+</p>
+            <h3>Heat Map</h3>
+            <iframe width="900" height="900" title="Correlation Table of Features" 
+	src="static/plots/strokedf_correlation_matrix.html"></iframe> 
+            
+            <p class= "lead">A correlation matrix is highly complex and very interesting to study. All of our X variables, which in this case is over a dozen trait statuses are placed on BOTH the X and y axises. From there, a grid is formed  in which we can directly see the correlation between two traits. The higher the correlation between two traits, the more yellow the box is, meaning there is a perfect correlation between the two. You may notice that cutting through the middle of the grid is descending diagonal yellow line. This is where two identical values match up, creating a box where the two are obviously related. When there exists a 1, the line of best fit is flat and horizontal. There are no trends upwards or downwards. If a number is decimal such as .5, than there will be loosely plotted points that generally are rising up. Vice versa, -0.5 would be a series of loosely affiliated points descending. To conclude, a 0 value indicates no correlation and will be marked by random points from which no line can be drawn.</p>
+ 
+                            </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+   <div class="container px-8">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                             <!-- Contact section-->
+        <section id="Machine Learning">
+                        <h2>Machine Model Learning</h2>
+          <p class="lead">After creating various visualizations to help familiarize ourselves with the data, our team moved on to plugging in our data into five different machine learning models. Here, the Frenzied Physicists split our data on Stroke victims into X and Y, with x being patient traits  (age, sex, bmi, etc.)  and y being if they had a stroke or not. We then divided up all of our data into an 80:20 ratio., with the 80% being our training data and the 20% being our testing data. One challenge we faced when dividing the data was that because our percentage of stroke victims compared to non-stroke victims was so small, we risked grouping all of our stroke victims into the testing data and creating a training dataset that consisted of mostly non-stroke victims. To ensure that the ratio remained consistent, we stratified our data. Upsampled the minority class (people with strokes using SMOTE) and then downsampled the majority classing randomly.We also made sure to run each model with GridSearchCV, a program that allows to find optimal parameters for each model. By running a GridSearch, we hoped to get truer results.
+</p>
+                      <p class= "lead"><b>Decision Tree</b></p>
+                                            <iframe width="900" height="900" title="Decision Tree" 
+	src="static/plots/dt.jpg"></iframe> 
+                      <p class= "lead">This <b>decision tree</b> shows us what our coding from earlier described. The decision tree is taking the attributes and splitting the data into subsets, predicting a logical outcome based on what it is given. Each of the boxes show important data like, for instance, at the to it says "age is less than or equal to 53.015" if this is true than the patient will move to the left, and if it is false it will go to the right, it will then follow this pattern of "x is less than or equal to y" until we reach the bottom. (Leaves are the decisions).  Also you can see that each of the boxes are colored orange or blue, if it is colored blue than that patient in out data had a stroke whereas if it is orange they did not have a stroke, also as the colors get lighter  the gini impurity gets higher, Gini impurity is a function that determines how well a decision tree was split, so the closer to zero it is the better it is when it is closer to 0.5, which is the maximum, that means the tree was split worse.</p>
+                  </div>
+     </div>
+     <p class ="lead">____________________________________________________________ </p>
+<h3>
+Decision Tree Classifier GridSearchCV
+     </h3>
+     <br>
+      <p class="lead"> Hyperparameter tuning helps us set parameters for our machine learning model. For the decision tree, we can see that our model suffered from less accuracy, recall, and f1 scores when compared to our initial decision tree. </p>
+     <p class= "lead">
+       Example:
+     </p>
+  <iframe width="900" height="600" title="Decision Tree Classifier GridSearchCV" src="static/images/0_HURnefMczvAiCIXt.png"></iframe> 
+      <p>           ________________________________________________________________</p>
+     </div>
+   <div class="container px-8">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                                        <h2>
+  Random Forest
+</h2>
+                  <p class= "lead">
+       Example:
+     </p>
+                  <iframe width="900" height="600" title="Support Vector" src="static/images/random_forest.png"></iframe>
+                  <p class= "lead">
+                   A <b>random forest</b> is a classification algorithm that consists of multiple decision trees. Each decision tree is run and spits out a ‘vote’ and the random forest’s result is the prediction that the most decision trees voted for. While random forests are quite accurate due to the sheer volume of predictions they make, this sheer volume also makes these models a bit slow to train and ineffective for real-time predictions.
+
+                  <p class="lead">       _____________________________________________________________________________________________________________
+                      </p>
+                      <h3>Random Forest GridSearch</h3>
+                  <p class="lead">Our grid search, hyper-parameter tuned random forest model improved our initial accuracy, precision, recall, and f1 scores. While it is typical for this type of model to perform outstandingly when working with data  sets like ours, our logistic regression model still performed the best. We attribute this occurrence to the uniquely limited features of the data set we uploaded from Kaggle. </p>
+                  </div>
+                  <iframe width="900" height="600" title="Support Vector" src="static/images/1_58f1CZ8M4il0OZYg2oRN4w.png"></iframe>
+     <p class="lead">__________________________________________________________________________________________________</p>
+                      <h3> Logistic Regression</h3>
+                      <br>
+<p class = "lead"><b>Logistic regression</b> is used to find the probability of something happening by  having the logistic odds of the event be a linear combination of one or more independent variables. We used logistic regression to predict and categorize our dependent variable (stroke) and by using a set of independent variables (age, health conditions) to determine a binary outcome such as yes or no. When running our model we got a high accuracy score, which meant that our models predictions were correct given a certain set of data. Out of this we got a high f1 score, which means that our model is performing well.</p>
+                      <p class= "lead">
+       Example:
+     </p>
+  <iframe width="900" height="680" title="Logistic Regression" src="static/plots/logistic_reg.png"></iframe> <p class="lead">____________________________________________________________________</p> <div style='text-align:center'></div><div style='text-align:center'></div><div style='text-align:justify'></div>
+                      <h3>Support Vector Classifier</h3>
+                      <p class= "lead">
+       Example:
+     </p>
+  <iframe width="900" height="600" title="Support Vector" src="static/images/support-vector-machine-algorithm.png"></iframe>
+                      <p class= "lead">We tried using the <b>Support Vector Classifier</b> which uses classification algorithms for our two groups.  SVC puts the data into a hyperplane which separates our 'stroke' and 'no stroke' data with a decision boundary line. For our parameters we applied the rbf kernel and gamma which helps with non linear classifier, while the C parameter trades off correct classification of training examples against maximization of the boundary line.  The results weren't amazing, other model learning machines were better, but they were pretty good results. Lacking in precision, the SVC came out with a lot of false positives and fewer false negatives which is better for our data set since we are dealing with strokes. In the real world, it is better to predict a false stroke then to predict no stroke at all.
+</p>
+<p class="lead">       _______________________________________________________________________________________
+                      </p>
+                  </div>
+<h2>
+  K-Nearest Neighbor
+</h2>
+                  <p class= "lead">
+       Example:
+     </p>
+                   <iframe width="900" height="600" title="Support Vector" src="static/images/knn.png"></iframe>
+   <p class="lead">The abbreviation <b>KNN</b> stands for “K-Nearest Neighbor”. It is a supervised machine learning algorithm. The algorithm can be used to solve both classification and regression problem statements. The number of nearest neighbors to a new unknown variable that has to be predicted or classified is denoted by the symbol 'K'. We are often notified that you share many characteristics with your nearest peers, whether it be your thinking process, working ettiquettes, philosophies, or other factors. As a result, we build friendships with people we deem similar to us. The KNN algorithm employs the same principle. Its aim is to locate all of the closest neighbors around a new unknown data point in order to figure out what class it belongs to. It’s a distance-based approach. </p>
+<p class="lead">       _____________________________________________________________________________________________________________
+                      </p>
+               
+                  
+
+                      <h3>Our Results</h3>
+
+                      <iframe width="900" height="400" title="Correlation Table of Features" 
+	src="static/plots/results.html"></iframe> 
+                        <p class="lead">Overall, we achieved pretty good results. We achieved both a max accuracy of 0.84 and a high f1 score of 0.83 from the logistic regression. The logistic regression performed the best even when compared to the hyper-parameter-tuned models that we trained. The models that we hyper-parameter tuned were the decision tree, random forest, KNN, and the SVC. Performing a grid search, an algorithm for hyperparameter tuning, for random forest improved our results, but ultimately still did not outperform logistic regression. Furthermore, performing a grid search for our decision tree worsened its results. This is because of the lack of scope for hyper parameters our decision tree contained. The decision tree did better than the random forest even though ensemble methods normally work better than just a normal decision tree. This might be due to the lack of features in the data. Because there are so little features when the random forest is training, the smaller decision trees trained on subsets of the features which may be negatively affecting the performance and the models aren't able to discern any new patterns. Our worst performing model was the support vector classifier because it's precision was .67, and it had the lowest number from our range of recall, f1 score, accuracy, and precision. Precision measures the quality of a positive prediction made by the model. The low precision value of the support vector classifier was due to too many false positives, which means the model labelled negative values as positive.
+ </p>
+                    </div>
+       <!-- Contact section-->
+        <section id="contact">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>A retrospective view of a completed model and developmental challenges.</h2>
+                        <p class="lead">Before writing our first line of code, our team determined which roadblocks we'd most have to concern ourselves with. First and foremost, we acknowledged that most of us had never coded before, let alone build a machine learning model. Then, we knew that we would have to clean our data. The data set that we had imported from Kaggle had many NaN values and an entire column with patient IDs that was irrelevant to our model. Our trouble did not end there however. Very early on we realized that our data was at risk of containing outliers that would throw off our model and tug averages in a given direction. While our concerns with our data never became an issue, we were able to begin coding by dividing up the work, and the rows with NaN values and the ID column were removed, we found that our most inhibiting difficulty did lie in our data set, just not where we had expected it to. After running stratified data through five different types of classifiers, it was discovered that our data contained a debilitating uneven ratio of stroke victims to non-stroke victims, heavily favoring those who had reported not experiencing a stroke. Because of this ratio, many of our outputs showed zeros in results. To address the issue, we downsized the number of non-stroke victims and synthesized new data for stroke victims, evening out our ratio. With our modified data set, we re-ran our classifiers and obtained more workable results. Ultimately, our final product was based off of our heavily modified data set, which may account for errors in prediction.  </p>
+                    </div>  
+              </div>
+              <br>
+          <h2>Meet the Team!</h2> 
+          <p class="lead">
+          The Frenzied Physicists are a group of first time coders who enrolled in A.I. Camp to enter the world of computer science and develop something meaningful. Seth, Suhas, Esmeralda, Lily, Bradley, and Chris worked with their instructor Anthony Campbell over three weeks and developed confidence in their coding skills and spent their summer learning. </p>
+          </div>
+        </section>
+      
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; A.I. Camp 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/js/scripts.js"></script>
+    </body>
+</html>
